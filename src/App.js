@@ -107,7 +107,8 @@ function App() {
                 }}
               >
               <Routes> 
-                <Route path="/" element={<User/>} /> 
+                <Route path="/" element={<Login/>} />
+                <Route exact path="/login" element={<Login/>} /> 
                 <Route path="/user" element={<User/>} /> 
                 <Route path="/create-user" element={<CreateUser/>} /> 
                 <Route path="/edit-user/:id" element={<EditUser/>} /> 
@@ -117,10 +118,8 @@ function App() {
                 <Route exact path="/blog" element={<Blog/>} /> 
                 <Route exact path="/create-blog" element={<CreateBlog/>} /> 
                 <Route exact path="/edit-blog/:id" element={<EditBlog/>} /> 
-                <Route exact path="/login" element={<Login/>} /> 
                 <Route exact path="/profile" element={<Profile/>} /> 
                 <Route exact path="/change-pass" element={<ChangePass/>} /> 
-                <Route exact path="/login" element={<Login/>} /> 
                 <Route exact path="/transaction" element={<Transaction/>} /> 
               </Routes>
               </Content>
